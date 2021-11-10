@@ -6,27 +6,27 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: Name of unput file to download
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: Name of output file
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: Type of output file
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: Description for the output file
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
+        description: Minimum accepted price
         type: float
 
       max_price:
-        description: ## ADD DESCRIPTION
+        description: Maximum accepted price
         type: float
 
 
