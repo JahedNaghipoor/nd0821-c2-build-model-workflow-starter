@@ -7,4 +7,3 @@ dependencies:
   - pip=20.3.3
   - pip:
       - wandb==0.10.31
-      - 
