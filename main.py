@@ -37,7 +37,7 @@ def go(config: DictConfig):
         if "download" in active_steps:
             # Download file and load in W&B
             _ = mlflow.run(
-                f"{config['main']['components_repository']}components/get_data",
+                None,
                 "main",
                 parameters={
                     "sample": config["etl"]["sample"],
@@ -49,7 +49,7 @@ def go(config: DictConfig):
 
         if "basic_cleaning" in active_steps:
             _ = mlflow.run(
-                f"{config['main']['components_repository']}src/basic_cleaning",
+                None,
                 "main",
                 parameters={
                     "input_artifact": "sample.csv:latest",
@@ -63,7 +63,7 @@ def go(config: DictConfig):
 
         if "data_check" in active_steps:
             _ = mlflow.run(
-                f"{config['main']['components_repository']}src/data_check",
+                None,
                 "main",
                 parameters={
                     "csv": "clean_sample.csv:latest",
@@ -76,7 +76,7 @@ def go(config: DictConfig):
 
         if "data_split" in active_steps:
             _ = mlflow.run(
-                f"{config['main']['components_repository']}components/train_val_test_split",
+                None,
                 "main",
                 parameters={
                     "input": "clean_sample.csv:latest",
