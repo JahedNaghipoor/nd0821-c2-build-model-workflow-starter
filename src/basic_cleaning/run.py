@@ -39,6 +39,9 @@ def go(args):
     artifact.add_file(args.output_artifact)
     run.log_artifact(artifact)
 
+    logger.info("Cleaned data is loaded to Weights & Biases")
+    run.finish()
+
 
 if __name__ == "__main__":
 
