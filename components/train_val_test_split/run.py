@@ -37,17 +37,17 @@ def go(args):
     # Save to output files
     for df, k in zip([trainval, test], ['trainval', 'test']):
         logger.info(f"Uploading {k}_data.csv dataset")
-        
+        with tempfile.NamedTemporaryFile("w") as fp:
 
-        df.to_csv(f"{k}_data.csv", index=False)
+            df.to_csv(fp.name, index=False)
 
-        log_artifact(
-            f"{k}_data.csv",
-            f"{k}_data",
-            f"{k} split of dataset",
-            f"{k}_data.csv",
-            run,
-        )
+            log_artifact(
+                f"{k}_data.csv",
+                f"{k}_data",
+                f"{k} split of dataset",
+                fp.name,
+                run,
+            )
 
 
 if __name__ == "__main__":
