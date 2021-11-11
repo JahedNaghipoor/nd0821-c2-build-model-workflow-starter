@@ -29,7 +29,6 @@ def go(args):
     )
     
     logger.info("Data is loaded to Weights & Biases")
-    run.finish()
 
 
 if __name__ == "__main__":
