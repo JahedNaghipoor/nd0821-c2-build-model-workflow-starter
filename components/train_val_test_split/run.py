@@ -34,24 +34,17 @@ def go(args):
     )
 
     # Save to output files
-    for df in [trainval, test]:
-        logger.info(f"Uploading {df}_data.csv dataset")
-        df.to_csv(f"{df}_data.csv", index=False)  
-        artifact = wandb.Artifact(
-            df,
-            f"{df}_data",
-            "split_of_dataset",
-    )
+    for df, k in zip([trainval, test], ['trainval', 'test']):
+        logger.info(f"Uploading {k}_data.csv dataset")
+        df.to_csv(f"{k}_data.csv", index=False)  
+        log_artifact(
+                f"{k}_data.csv",
+                f"{k}_data",
+                "split_of_dataset",
+                f"{k}_data.csv",
+                run,
+            )
 
-        artifact.add_file(f"{df}_data.csv")
-        run.log_artifact(artifact)
-        # log_artifact(
-        #         f"{df}_data.csv",
-        #         f"{df}_data",
-        #         "split_of_dataset",
-        #         f"{df}_data.csv",
-        #         run,
-        #     )
     # for dataframe, k in zip([trainval, test], ['trainval', 'test']):
     #     logger.info(f"Uploading {k}_data.csv dataset")
     #     with tempfile.NamedTemporaryFile("w") as fp:
