@@ -46,6 +46,7 @@ def go(args):
     # Get the Random Forest configuration and update W&B
     with open(args.rf_config) as fp:
         rf_config = json.load(fp)
+        rf_config.close()
     # rf_config = {
     #     "n_estimators": 100,
     #     "max_depth": 15,
