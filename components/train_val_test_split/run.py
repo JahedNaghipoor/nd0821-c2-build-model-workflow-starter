@@ -34,17 +34,15 @@ def go(args):
         stratify=dataframe[args.stratify_by] if args.stratify_by != 'none' else None,
     )
 
-    for dataframe, k in zip([trainval, test], ['trainval', 'test']):
+    # Save to output files
+    for df, k in zip([trainval, test], ['trainval', 'test']):
         logger.info(f"Uploading {k}_data.csv dataset")
-        with tempfile.NamedTemporaryFile("w") as fp:
-
-            dataframe.to_csv(fp.name, index=False)
-
-            log_artifact(
+        df.to_csv(f"{k}_data.csv", index=False)  
+        log_artifact(
                 f"{k}_data.csv",
                 f"{k}_data",
                 "split_of_dataset",
-                fp.name,
+                f"{k}_data.csv",
                 run,
             )
 
