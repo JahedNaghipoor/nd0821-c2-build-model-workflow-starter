@@ -1,0 +1,542 @@
+[
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "wandb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wandb",
+        "description": "wandb",
+        "detail": "wandb",
+        "documentation": {}
+    },
+    {
+        "label": "log_artifact",
+        "importPath": "wandb_utils.log_artifact",
+        "description": "wandb_utils.log_artifact",
+        "isExtraImport": true,
+        "detail": "wandb_utils.log_artifact",
+        "documentation": {}
+    },
+    {
+        "label": "log_artifact",
+        "importPath": "wandb_utils.log_artifact",
+        "description": "wandb_utils.log_artifact",
+        "isExtraImport": true,
+        "detail": "wandb_utils.log_artifact",
+        "documentation": {}
+    },
+    {
+        "label": "log_artifact",
+        "importPath": "wandb_utils.log_artifact",
+        "description": "wandb_utils.log_artifact",
+        "isExtraImport": true,
+        "detail": "wandb_utils.log_artifact",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow",
+        "description": "mlflow",
+        "detail": "mlflow",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.stats",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "ColumnTransformer",
+        "importPath": "sklearn.compose",
+        "description": "sklearn.compose",
+        "isExtraImport": true,
+        "detail": "sklearn.compose",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleImputer",
+        "importPath": "sklearn.impute",
+        "description": "sklearn.impute",
+        "isExtraImport": true,
+        "detail": "sklearn.impute",
+        "documentation": {}
+    },
+    {
+        "label": "OrdinalEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "OneHotEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "FunctionTransformer",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "Pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "make_pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "hydra",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hydra",
+        "description": "hydra",
+        "detail": "hydra",
+        "documentation": {}
+    },
+    {
+        "label": "DictConfig",
+        "importPath": "omegaconf",
+        "description": "omegaconf",
+        "isExtraImport": true,
+        "detail": "omegaconf",
+        "documentation": {}
+    },
+    {
+        "label": "go",
+        "kind": 2,
+        "importPath": "components.get_data.run",
+        "description": "components.get_data.run",
+        "peekOfCode": "def go(args):\n    \"\"\"\n    go is the main function that is called when you run this script.\n    Args:\n        args: arguments to be passed to the function\n    \"\"\"\n    run = wandb.init(job_type=\"download_file\")\n    run.config.update(args)\n    logger.info(f\"Returning sample {args.sample}\")\n    logger.info(f\"Uploading {args.artifact_name} to Weights & Biases\")",
+        "detail": "components.get_data.run",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "components.get_data.run",
+        "description": "components.get_data.run",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    \"\"\"\n    go is the main function that is called when you run this script.\n    Args:\n        args: arguments to be passed to the function\n    \"\"\"\n    run = wandb.init(job_type=\"download_file\")\n    run.config.update(args)\n    logger.info(f\"Returning sample {args.sample}\")",
+        "detail": "components.get_data.run",
+        "documentation": {}
+    },
+    {
+        "label": "go",
+        "kind": 2,
+        "importPath": "components.test_regression_model.run",
+        "description": "components.test_regression_model.run",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"test_model\")\n    run.config.update(args)\n    logger.info(\"Downloading artifacts\")\n    # Download input artifact. This will also log that this script is using this\n    # particular version of the artifact\n    model_local_path = run.use_artifact(args.mlflow_model).download()\n    # Download test dataset\n    test_dataset_path = run.use_artifact(args.test_dataset).file()\n    # Read test dataset",
+        "detail": "components.test_regression_model.run",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "components.test_regression_model.run",
+        "description": "components.test_regression_model.run",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"test_model\")\n    run.config.update(args)\n    logger.info(\"Downloading artifacts\")\n    # Download input artifact. This will also log that this script is using this\n    # particular version of the artifact\n    model_local_path = run.use_artifact(args.mlflow_model).download()\n    # Download test dataset\n    test_dataset_path = run.use_artifact(args.test_dataset).file()",
+        "detail": "components.test_regression_model.run",
+        "documentation": {}
+    },
+    {
+        "label": "go",
+        "kind": 2,
+        "importPath": "components.train_val_test_split.run",
+        "description": "components.train_val_test_split.run",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_val_test_split\")\n    run.config.update(args)\n    # Download input artifact. This will also note that this script is using this\n    # particular version of the artifact\n    logger.info(f\"Fetching artifact {args.input}\")\n    artifact_local_path = run.use_artifact(args.input).file()\n    dataframe = pd.read_csv(artifact_local_path)\n    logger.info(\"Splitting trainval and test\")\n    trainval, test = train_test_split(",
+        "detail": "components.train_val_test_split.run",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "components.train_val_test_split.run",
+        "description": "components.train_val_test_split.run",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_val_test_split\")\n    run.config.update(args)\n    # Download input artifact. This will also note that this script is using this\n    # particular version of the artifact\n    logger.info(f\"Fetching artifact {args.input}\")\n    artifact_local_path = run.use_artifact(args.input).file()\n    dataframe = pd.read_csv(artifact_local_path)\n    logger.info(\"Splitting trainval and test\")",
+        "detail": "components.train_val_test_split.run",
+        "documentation": {}
+    },
+    {
+        "label": "log_artifact",
+        "kind": 2,
+        "importPath": "components.wandb_utils.log_artifact",
+        "description": "components.wandb_utils.log_artifact",
+        "peekOfCode": "def log_artifact(artifact_name, artifact_type, artifact_description, filename, wandb_run):\n    \"\"\"\n    Log the provided filename as an artifact in W&B, and add the artifact path to the MLFlow run\n    so it can be retrieved by subsequent steps in a pipeline\n    :param artifact_name: name for the artifact\n    :param artifact_type: type for the artifact (just a string like \"raw_data\", \"clean_data\" and so on)\n    :param artifact_description: a brief description of the artifact\n    :param filename: local filename for the artifact\n    :param wandb_run: current Weights & Biases run\n    :return: None",
+        "detail": "components.wandb_utils.log_artifact",
+        "documentation": {}
+    },
+    {
+        "label": "sanitize_path",
+        "kind": 2,
+        "importPath": "components.wandb_utils.sanitize_path",
+        "description": "components.wandb_utils.sanitize_path",
+        "peekOfCode": "def sanitize_path(s):\n    \"\"\"\n    Sanitizes the input path by:\n    1. Expanding environment variables\n    2. Expanding the home directory ('~')\n    3. Calculating the absolute path\n    :param s: input path\n    :return: a sanitized version of the input path\n    \"\"\"\n    return os.path.abspath(os.path.expanduser(os.path.expandvars(s)))",
+        "detail": "components.wandb_utils.sanitize_path",
+        "documentation": {}
+    },
+    {
+        "label": "go",
+        "kind": 2,
+        "importPath": "src.basic_cleaning.run",
+        "description": "src.basic_cleaning.run",
+        "peekOfCode": "def go(args):\n    \"\"\"\n    go is the main function that is called when you run this script.\n    Args:\n        args: arguments to be passed to the function\n    \"\"\"\n    run = wandb.init(job_type=\"basic_cleaning\")\n    run.config.update(args)\n    # Download input artifact.\n    local_path = run.use_artifact(args.input_artifact).file()",
+        "detail": "src.basic_cleaning.run",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "src.basic_cleaning.run",
+        "description": "src.basic_cleaning.run",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    \"\"\"\n    go is the main function that is called when you run this script.\n    Args:\n        args: arguments to be passed to the function\n    \"\"\"\n    run = wandb.init(job_type=\"basic_cleaning\")\n    run.config.update(args)\n    # Download input artifact.",
+        "detail": "src.basic_cleaning.run",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_addoption",
+        "kind": 2,
+        "importPath": "src.data_check.conftest",
+        "description": "src.data_check.conftest",
+        "peekOfCode": "def pytest_addoption(parser):\n    parser.addoption(\"--csv\", action=\"store\")\n    parser.addoption(\"--ref\", action=\"store\")\n    parser.addoption(\"--kl_threshold\", action=\"store\")\n    parser.addoption(\"--min_price\", action=\"store\")\n    parser.addoption(\"--max_price\", action=\"store\")\n@pytest.fixture(scope='session')\ndef data(request):\n    run = wandb.init(job_type=\"data_tests\", resume=True)\n    # Download input artifact. This will also note that this script is using this",
+        "detail": "src.data_check.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 2,
+        "importPath": "src.data_check.conftest",
+        "description": "src.data_check.conftest",
+        "peekOfCode": "def data(request):\n    run = wandb.init(job_type=\"data_tests\", resume=True)\n    # Download input artifact. This will also note that this script is using this\n    # particular version of the artifact\n    data_path = run.use_artifact(request.config.option.csv).file()\n    if data_path is None:\n        pytest.fail(\"You must provide the --csv option on the command line\")\n    df = pd.read_csv(data_path)\n    return df\n@pytest.fixture(scope='session')",
+        "detail": "src.data_check.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "ref_data",
+        "kind": 2,
+        "importPath": "src.data_check.conftest",
+        "description": "src.data_check.conftest",
+        "peekOfCode": "def ref_data(request):\n    run = wandb.init(job_type=\"data_tests\", resume=True)\n    # Download input artifact. This will also note that this script is using this\n    # particular version of the artifact\n    data_path = run.use_artifact(request.config.option.ref).file()\n    if data_path is None:\n        pytest.fail(\"You must provide the --ref option on the command line\")\n    df = pd.read_csv(data_path)\n    return df\n@pytest.fixture(scope='session')",
+        "detail": "src.data_check.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "kl_threshold",
+        "kind": 2,
+        "importPath": "src.data_check.conftest",
+        "description": "src.data_check.conftest",
+        "peekOfCode": "def kl_threshold(request):\n    kl_threshold = request.config.option.kl_threshold\n    if kl_threshold is None:\n        pytest.fail(\"You must provide a threshold for the KL test\")\n    return float(kl_threshold)\n@pytest.fixture(scope='session')\ndef min_price(request):\n    min_price = request.config.option.min_price\n    if min_price is None:\n        pytest.fail(\"You must provide min_price\")",
+        "detail": "src.data_check.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "min_price",
+        "kind": 2,
+        "importPath": "src.data_check.conftest",
+        "description": "src.data_check.conftest",
+        "peekOfCode": "def min_price(request):\n    min_price = request.config.option.min_price\n    if min_price is None:\n        pytest.fail(\"You must provide min_price\")\n    return float(min_price)\n@pytest.fixture(scope='session')\ndef max_price(request):\n    max_price = request.config.option.max_price\n    if max_price is None:\n        pytest.fail(\"You must provide max_price\")",
+        "detail": "src.data_check.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "max_price",
+        "kind": 2,
+        "importPath": "src.data_check.conftest",
+        "description": "src.data_check.conftest",
+        "peekOfCode": "def max_price(request):\n    max_price = request.config.option.max_price\n    if max_price is None:\n        pytest.fail(\"You must provide max_price\")\n    return float(max_price)",
+        "detail": "src.data_check.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_column_names",
+        "kind": 2,
+        "importPath": "src.data_check.test_data",
+        "description": "src.data_check.test_data",
+        "peekOfCode": "def test_column_names(data):\n    expected_colums = [\n        \"id\",\n        \"name\",\n        \"host_id\",\n        \"host_name\",\n        \"neighbourhood_group\",\n        \"neighbourhood\",\n        \"latitude\",\n        \"longitude\",",
+        "detail": "src.data_check.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_neighborhood_names",
+        "kind": 2,
+        "importPath": "src.data_check.test_data",
+        "description": "src.data_check.test_data",
+        "peekOfCode": "def test_neighborhood_names(data):\n    known_names = [\"Bronx\", \"Brooklyn\", \"Manhattan\", \"Queens\", \"Staten Island\"]\n    neigh = set(data['neighbourhood_group'].unique())\n    # Unordered check\n    assert set(known_names) == set(neigh)\ndef test_proper_boundaries(data: pd.DataFrame):\n    \"\"\"\n    Test proper longitude and latitude boundaries for properties in and around NYC\n    \"\"\"\n    idx = data['longitude'].between(-74.25, -73.50) & data['latitude'].between(40.5, 41.2)",
+        "detail": "src.data_check.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_proper_boundaries",
+        "kind": 2,
+        "importPath": "src.data_check.test_data",
+        "description": "src.data_check.test_data",
+        "peekOfCode": "def test_proper_boundaries(data: pd.DataFrame):\n    \"\"\"\n    Test proper longitude and latitude boundaries for properties in and around NYC\n    \"\"\"\n    idx = data['longitude'].between(-74.25, -73.50) & data['latitude'].between(40.5, 41.2)\n    assert np.sum(~idx) == 0\ndef test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_threshold: float):\n    \"\"\"\n    Apply a threshold on the KL divergence to detect if the distribution of the new data is\n    significantly different than that of the reference dataset",
+        "detail": "src.data_check.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_similar_neigh_distrib",
+        "kind": 2,
+        "importPath": "src.data_check.test_data",
+        "description": "src.data_check.test_data",
+        "peekOfCode": "def test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_threshold: float):\n    \"\"\"\n    Apply a threshold on the KL divergence to detect if the distribution of the new data is\n    significantly different than that of the reference dataset\n    \"\"\"\n    dist1 = data['neighbourhood_group'].value_counts().sort_index()\n    dist2 = ref_data['neighbourhood_group'].value_counts().sort_index()\n    assert scipy.stats.entropy(dist1, dist2, base=2) < kl_threshold\ndef test_row_count(data):\n    assert 15000 < data.shape[0] < 1000000",
+        "detail": "src.data_check.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_row_count",
+        "kind": 2,
+        "importPath": "src.data_check.test_data",
+        "description": "src.data_check.test_data",
+        "peekOfCode": "def test_row_count(data):\n    assert 15000 < data.shape[0] < 1000000\ndef test_price_range(data:pd.DataFrame, max_price: float, min_price: float):\n    assert data['price'].max() <= max_price\n    assert data['price'].min() >= min_price",
+        "detail": "src.data_check.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_price_range",
+        "kind": 2,
+        "importPath": "src.data_check.test_data",
+        "description": "src.data_check.test_data",
+        "peekOfCode": "def test_price_range(data:pd.DataFrame, max_price: float, min_price: float):\n    assert data['price'].max() <= max_price\n    assert data['price'].min() >= min_price",
+        "detail": "src.data_check.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "delta_date_feature",
+        "kind": 2,
+        "importPath": "src.train_random_forest.feature_engineering",
+        "description": "src.train_random_forest.feature_engineering",
+        "peekOfCode": "def delta_date_feature(dates):\n    \"\"\"\n    Given a 2d array containing dates (in any format recognized by pd.to_datetime), it returns the delta in days\n    between each date and the most recent date in its column\n    \"\"\"\n    date_sanitized = pd.DataFrame(dates).apply(pd.to_datetime)\n    return date_sanitized.apply(lambda d: (d.max() -d).dt.days, axis=0).to_numpy()",
+        "detail": "src.train_random_forest.feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "delta_date_feature",
+        "kind": 2,
+        "importPath": "src.train_random_forest.run",
+        "description": "src.train_random_forest.run",
+        "peekOfCode": "def delta_date_feature(dates):\n    \"\"\"\n    Given a 2d array containing dates (in any format recognized by pd.to_datetime), it returns the delta in days\n    between each date and the most recent date in its column\n    \"\"\"\n    date_sanitized = pd.DataFrame(dates).apply(pd.to_datetime)\n    return date_sanitized.apply(lambda d: (d.max() -d).dt.days, axis=0).to_numpy()\nlogging.basicConfig(level=logging.INFO, format=\"%(asctime)-15s %(message)s\")\nlogger = logging.getLogger()\ndef go(args):",
+        "detail": "src.train_random_forest.run",
+        "documentation": {}
+    },
+    {
+        "label": "go",
+        "kind": 2,
+        "importPath": "src.train_random_forest.run",
+        "description": "src.train_random_forest.run",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    with open(args.rf_config) as fp:\n        rf_config = json.load(fp)\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed\n    ######################################",
+        "detail": "src.train_random_forest.run",
+        "documentation": {}
+    },
+    {
+        "label": "plot_feature_importance",
+        "kind": 2,
+        "importPath": "src.train_random_forest.run",
+        "description": "src.train_random_forest.run",
+        "peekOfCode": "def plot_feature_importance(pipe, feat_names):\n    # We collect the feature importance for all non-nlp features first\n    feat_imp = pipe[\"random_forest\"].feature_importances_[: len(feat_names)-1]\n    # For the NLP feature we sum across all the TF-IDF dimensions into a global\n    # NLP importance\n    nlp_importance = sum(pipe[\"random_forest\"].feature_importances_[len(feat_names) - 1:])\n    feat_imp = np.append(feat_imp, nlp_importance)\n    fig_feat_imp, sub_feat_imp = plt.subplots(figsize=(10, 10))\n    # idx = np.argsort(feat_imp)[::-1]\n    sub_feat_imp.bar(range(feat_imp.shape[0]), feat_imp, color=\"r\", align=\"center\")",
+        "detail": "src.train_random_forest.run",
+        "documentation": {}
+    },
+    {
+        "label": "get_inference_pipeline",
+        "kind": 2,
+        "importPath": "src.train_random_forest.run",
+        "description": "src.train_random_forest.run",
+        "peekOfCode": "def get_inference_pipeline(rf_config, max_tfidf_features):\n    # Let's handle the categorical features first\n    # Ordinal categorical are categorical values for which the order is meaningful, for example\n    # for room type: 'Entire home/apt' > 'Private room' > 'Shared room'\n    ordinal_categorical = [\"room_type\"]\n    non_ordinal_categorical = [\"neighbourhood_group\"]\n    # NOTE: we do not need to impute room_type because the type of the room\n    # is mandatory on the websites, so missing values are not possible in production\n    # (nor during training). That is not true for neighbourhood_group\n    ordinal_categorical_preproc = OrdinalEncoder()",
+        "detail": "src.train_random_forest.run",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "src.train_random_forest.run",
+        "description": "src.train_random_forest.run",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    with open(args.rf_config) as fp:\n        rf_config = json.load(fp)\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed",
+        "detail": "src.train_random_forest.run",
+        "documentation": {}
+    },
+    {
+        "label": "go",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def go(config: DictConfig):\n    \"\"\"\n    go is the main function that is called when you run this script.\n    Args:\n        config (DictConfig):   Configuration object from hydra (see config.yaml)\n    \"\"\"\n    # Setup the wandb experiment. All runs will be grouped under this name\n    os.environ[\"WANDB_PROJECT\"] = config[\"main\"][\"project_name\"]\n    os.environ[\"WANDB_RUN_GROUP\"] = config[\"main\"][\"experiment_name\"]\n    # Steps to execute",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "_steps",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "_steps = [\n    \"download\",\n    \"basic_cleaning\",\n    \"data_check\",\n    \"data_split\",\n    \"train_random_forest\",\n    # NOTE: We do not include this in the steps so it is not run by mistake.\n    # You first need to promote a model export to \"prod\" before you can run this,\n    # then you need to run this step explicitly\n    #    \"test_regression_model\"",
+        "detail": "main",
+        "documentation": {}
+    }
+]
