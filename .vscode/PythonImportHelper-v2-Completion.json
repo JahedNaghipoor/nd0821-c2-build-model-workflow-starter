@@ -490,7 +490,7 @@
         "kind": 2,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    with open(args.rf_config) as fp:\n        rf_config = json.load(fp)\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed\n    ######################################",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # with open(args.rf_config) as fp:\n    #     rf_config = json.load(fp)\n    rf_config = {\n        \"n_estimators\": 100,\n        \"max_depth\": 15,\n        \"min_samples_split\": 4,",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
@@ -517,7 +517,7 @@
         "kind": 5,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    with open(args.rf_config) as fp:\n        rf_config = json.load(fp)\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # with open(args.rf_config) as fp:\n    #     rf_config = json.load(fp)\n    rf_config = {\n        \"n_estimators\": 100,\n        \"max_depth\": 15,",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
