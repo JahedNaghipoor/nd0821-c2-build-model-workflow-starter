@@ -44,18 +44,18 @@ def go(args):
     run.config.update(args)
 
     # Get the Random Forest configuration and update W&B
-    # with open(args.rf_config) as fp:
-    #     rf_config = json.load(fp)
-    rf_config = {
-        "n_estimators": 100,
-        "max_depth": 15,
-        "min_samples_split": 4,
-        "min_samples_leaf": 3,
-        "n_jobs": -1,
-        "criterion": "mae",
-        "max_features": 0.5,
-        "oob_score": True
-    }
+    with open(args.rf_config) as fp:
+        rf_config = json.load(fp)
+    # rf_config = {
+    #     "n_estimators": 100,
+    #     "max_depth": 15,
+    #     "min_samples_split": 4,
+    #     "min_samples_leaf": 3,
+    #     "n_jobs": -1,
+    #     "criterion": "mae",
+    #     "max_features": 0.5,
+    #     "oob_score": True
+    # }
     run.config.update(rf_config)
 
     # Fix the random seed for the Random Forest, so we get reproducible results
