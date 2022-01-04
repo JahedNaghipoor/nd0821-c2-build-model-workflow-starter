@@ -110,9 +110,7 @@ def go(config: DictConfig):
 
             _ = mlflow.run(
                 os.path.join(
-                    hydra.utils.get_original_cwd(),
-                    "src",
-                    "train_random_forest"),
+                f"{config['main']['components_repository']}src/train_random_forest"),
                 "main",
                 parameters={
                     "trainval_artifact": "trainval_data.csv:latest",

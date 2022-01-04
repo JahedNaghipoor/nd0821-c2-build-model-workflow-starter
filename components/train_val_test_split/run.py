@@ -5,6 +5,7 @@ This script splits the provided dataframe in test and remainder
 import argparse
 import logging
 import pandas as pd
+import tempfile
 import wandb
 from sklearn.model_selection import train_test_split
 from wandb_utils.log_artifact import log_artifact
@@ -33,31 +34,19 @@ def go(args):
         stratify=dataframe[args.stratify_by] if args.stratify_by != 'none' else None,
     )
 
-    # Save to output files
-    for df, k in zip([trainval, test], ['trainval', 'test']):
+    for dataframe, k in zip([trainval, test], ['trainval', 'test']):
         logger.info(f"Uploading {k}_data.csv dataset")
-        df.to_csv(f"{k}_data.csv", index=False)  
-        log_artifact(
+        with tempfile.NamedTemporaryFile("w") as fp:
+
+            dataframe.to_csv(fp.name, index=False)
+
+            log_artifact(
                 f"{k}_data.csv",
                 f"{k}_data",
                 "split_of_dataset",
-                f"{k}_data.csv",
+                fp.name,
                 run,
             )
-
-    # for dataframe, k in zip([trainval, test], ['trainval', 'test']):
-    #     logger.info(f"Uploading {k}_data.csv dataset")
-    #     with tempfile.NamedTemporaryFile("w") as fp:
-
-    #         dataframe.to_csv(fp.name, index=False)
-
-    #         log_artifact(
-    #             f"{k}_data.csv",
-    #             f"{k}_data",
-    #             "split_of_dataset",
-    #             fp.name,
-    #             run,
-    #         )
 
 
 if __name__ == "__main__":
