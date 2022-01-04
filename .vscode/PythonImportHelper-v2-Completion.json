@@ -490,7 +490,7 @@
         "kind": 2,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    print(\"This is it:\"+ args.rf_config)\n    rf_config = json.load(args.rf_config)\n    # with open(args.rf_config) as fp:\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    print(\"This is it:\"+ args.rf_config)\n    rf_config = json.load(open(args.rf_config))\n    # with open(args.rf_config) as fp:\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
@@ -517,7 +517,7 @@
         "kind": 5,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    print(\"This is it:\"+ args.rf_config)\n    rf_config = json.load(args.rf_config)\n    # with open(args.rf_config) as fp:\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    print(\"This is it:\"+ args.rf_config)\n    rf_config = json.load(open(args.rf_config))\n    # with open(args.rf_config) as fp:\n    run.config.update(rf_config)\n    # Fix the random seed for the Random Forest, so we get reproducible results",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
