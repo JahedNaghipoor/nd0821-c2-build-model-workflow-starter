@@ -44,13 +44,13 @@ def go(args):
     run.config.update(args)
 
     # Get the Random Forest configuration and update W&B
-    try:
-        with open(args.rf_config) as fp:
-            rf_config = json.load(fp)
-    except ValueError as e:
-        print(f"Error: {e}")
-        rf_config = json.load(open("rf_config.json"))      
 
+    # with open(args.rf_config) as fp:
+    #     rf_config = json.load(fp)
+    # the above code sometimes it can not read the configuration file correctly
+    
+    rf_config = json.load(open("rf_config.json")) 
+    
     # Fix the random seed for the Random Forest, so we get reproducible results
     rf_config['random_state'] = args.random_seed
 
