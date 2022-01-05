@@ -38,7 +38,7 @@ and click on `Fork` in the upper right corner. This will create a fork in your G
 repository that is under your control. Now clone the repository locally so you can start working on it:
 
 ```
-git clone https://github.com/[your github username]/nd0821-c2-build-model-workflow-starter.git
+git clone https://github.com/JahedNaghipoor/nd0821-c2-build-model-workflow-starter.git
 ```
 
 and go into the repository:
@@ -71,7 +71,8 @@ You should see a message similar to:
 ```
 wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
 ```
-
+to see the project in weights and biases, please visit the publick link below
+[https://wandb.ai/jahednaghipoor/nyc_airbnb/overview?workspace=user-jahednaghipoor](https://wandb.ai/jahednaghipoor/nyc_airbnb/overview?workspace=user-jahednaghipoor)
 ### Cookie cutter
 In order to make your job a little easier, you are provided a cookie cutter template that you can use to create 
 stubs for new pipeline components. It is not required that you use this, but it might save you from a bit of 
