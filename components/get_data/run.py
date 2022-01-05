@@ -2,8 +2,6 @@
 """
 This script downloads a URL to a local destination
 and load it to Weights & Biases
-Author: Jahed Naghipoor
-Date: December 2021
 """
 import argparse
 import logging

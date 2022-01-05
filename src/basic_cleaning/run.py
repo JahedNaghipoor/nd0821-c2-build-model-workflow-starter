@@ -3,9 +3,6 @@
 This script download from W&B the raw dataset
 and apply some basic data cleaning,
 exporting the result to a new artifact
-Author: Jahed Naghipoor
-Date: December 2021
-Pylint score: 9.67/10
 """
 import argparse
 import logging
