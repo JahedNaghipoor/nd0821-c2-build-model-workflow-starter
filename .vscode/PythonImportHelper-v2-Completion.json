@@ -490,7 +490,7 @@
         "kind": 2,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # print(args.rf_config)\n    try:\n        with open(args.rf_config) as fp:\n            rf_config = json.load(fp)\n    except ValueError as e:\n        print(f\"Error: {e}\")",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    try:\n        with open(args.rf_config) as fp:\n            rf_config = json.load(fp)\n    except ValueError as e:\n        print(f\"Error: {e}\")\n        rf_config = json.load(open(\"rf_config.json\"))      ",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
@@ -517,7 +517,7 @@
         "kind": 5,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # print(args.rf_config)\n    try:\n        with open(args.rf_config) as fp:\n            rf_config = json.load(fp)\n    except ValueError as e:",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    try:\n        with open(args.rf_config) as fp:\n            rf_config = json.load(fp)\n    except ValueError as e:\n        print(f\"Error: {e}\")",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
