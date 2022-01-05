@@ -35,6 +35,10 @@ def go(args):
     # Convert last_review to datetime
     if "last_review" in dataframe.columns:
         dataframe['last_review'] = pd.to_datetime(dataframe['last_review'])
+    
+    # to solve issue in sample2.csv we use the following code
+    idx = dataframe['longitude'].between(-74.25, -73.50) & dataframe['latitude'].between(40.5, 41.2)
+    dataframe = dataframe[idx].copy()
 
     dataframe.to_csv(args.output_artifact, index=False)
 
