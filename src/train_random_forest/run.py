@@ -51,7 +51,7 @@ def go(args):
     # except ValueError as e:
     #     print(f"Error: {e}")
     #     rf_config = json.load("rf_config.json")
-    rf_config = json.load('rf_config.json')        
+    rf_config = json.load(open('rf_config.json'))        
 
     # Fix the random seed for the Random Forest, so we get reproducible results
     rf_config['random_state'] = args.random_seed

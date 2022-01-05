@@ -490,7 +490,7 @@
         "kind": 2,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # print(args.rf_config)\n    with open(args.rf_config) as fp:\n        rf_config = json.load(fp)\n        rf_config.close()\n    # Fix the random seed for the Random Forest, so we get reproducible results\n    rf_config['random_state'] = args.random_seed",
+        "peekOfCode": "def go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # print(args.rf_config)\n    # try:\n    #     with open(args.rf_config) as fp:\n    #         rf_config = json.load(fp)\n    # except ValueError as e:\n    #     print(f\"Error: {e}\")",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
@@ -517,7 +517,7 @@
         "kind": 5,
         "importPath": "src.train_random_forest.run",
         "description": "src.train_random_forest.run",
-        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # print(args.rf_config)\n    with open(args.rf_config) as fp:\n        rf_config = json.load(fp)\n        rf_config.close()\n    # Fix the random seed for the Random Forest, so we get reproducible results",
+        "peekOfCode": "logger = logging.getLogger()\ndef go(args):\n    run = wandb.init(job_type=\"train_random_forest\")\n    run.config.update(args)\n    # Get the Random Forest configuration and update W&B\n    # print(args.rf_config)\n    # try:\n    #     with open(args.rf_config) as fp:\n    #         rf_config = json.load(fp)\n    # except ValueError as e:",
         "detail": "src.train_random_forest.run",
         "documentation": {}
     },
@@ -535,7 +535,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "_steps = [\n    \"download\",\n    \"basic_cleaning\",\n    \"data_check\",\n    \"data_split\",\n    \"train_random_forest\",\n    # NOTE: We do not include this in the steps so it is not run by mistake.\n    # You first need to promote a model export  (here random forest model)to \"prod\" before you can run this,\n    # then you need to run this step explicitly\n    \"test_regression_model\" ",
+        "peekOfCode": "_steps = [\n    # \"download\",\n    # \"basic_cleaning\",\n    # \"data_check\",\n    # \"data_split\",\n    \"train_random_forest\",\n    # NOTE: We do not include this in the steps so it is not run by mistake.\n    # You first need to promote a model export  (here random forest model)to \"prod\" before you can run this,\n    # then you need to run this step explicitly\n    \"test_regression_model\" ",
         "detail": "main",
         "documentation": {}
     }
